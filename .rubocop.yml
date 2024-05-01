@@ -1,8 +1,22 @@
+require:
+  - rubocop-minitest
+
 AllCops:
-  TargetRubyVersion: 3.0
+  NewCops: enable
+  Exclude:
+    - bin/**/*
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
+
+Style/Semicolon:
+  AllowAsExpressionSeparator: true
+
+Naming/MethodParameterName:
+  AllowedNames:
+    - x
+    - y
+
